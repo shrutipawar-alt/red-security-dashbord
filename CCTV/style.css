@@ -1,0 +1,176 @@
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Consolas,monospace;
+}
+
+body{
+background:#050505;
+color:#ff3333;
+overflow-x:hidden;
+}
+
+/* Loader */
+#loader{
+position:fixed;
+inset:0;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.loader-content{
+text-align:center;
+}
+
+.loading-bar{
+width:300px;
+height:10px;
+border:1px solid red;
+margin:20px auto;
+}
+
+.loading-progress{
+height:100%;
+width:0%;
+background:red;
+animation:load 3s linear forwards;
+}
+
+@keyframes load{
+to{width:100%;}
+}
+
+/* Login */
+#loginScreen{
+display:none;
+height:100vh;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+width:380px;
+padding:30px;
+background:#111;
+border:2px solid red;
+border-radius:15px;
+box-shadow:0 0 25px red;
+}
+
+.login-box input,
+.login-box button{
+width:100%;
+padding:12px;
+margin:10px 0;
+}
+
+.login-box button{
+background:red;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.terminal{
+margin-top:15px;
+height:120px;
+overflow:hidden;
+border:1px solid red;
+padding:10px;
+font-size:12px;
+}
+
+/* Dashboard */
+#dashboard{
+display:none;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+padding:15px;
+border-bottom:2px solid red;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+padding:15px;
+}
+
+.card{
+padding:15px;
+text-align:center;
+border:1px solid red;
+box-shadow:0 0 10px red;
+}
+
+.camera-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+padding:15px;
+}
+
+.camera{
+position:relative;
+height:240px;
+overflow:hidden;
+border:2px solid red;
+}
+
+.camera video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.camera span{
+position:absolute;
+bottom:10px;
+left:10px;
+background:rgba(0,0,0,.8);
+padding:5px 10px;
+}
+
+.logs{
+margin:15px;
+padding:15px;
+border:1px solid red;
+}
+
+.log{
+padding:6px 0;
+border-bottom:1px solid rgba(255,0,0,.3);
+}
+
+@media(max-width:900px){
+.camera-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.camera-grid{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.topbar{
+flex-direction:column;
+text-align:center;
+}
+}
+
+

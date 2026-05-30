@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RED SECURITY CONTROL CENTER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+    <div class="loader-content">
+        <h1>RED SECURITY SYSTEM</h1>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <p>Initializing AI Surveillance...</p>
+    </div>
+</div>
+
+<!-- Login Screen -->
+<div id="loginScreen">
+    <div class="login-box">
+        <h1>🔐 SECURITY ACCESS</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">ACCESS SYSTEM</button>
+
+        <div class="terminal">
+            <div id="terminalText"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard">
+
+<header class="topbar">
+    <h1>🚨 RED SECURITY CONTROL CENTER</h1>
+    <div id="clock"></div>
+</header>
+
+<section class="stats">
+    <div class="card">THREAT LEVEL: HIGH</div>
+    <div class="card">AI MONITORING: ACTIVE</div>
+    <div class="card">NETWORK: ONLINE</div>
+</section>
+
+<section class="camera-grid">
+
+<div class="camera">
+<video autoplay muted loop playsinline>
+<source src="city1.mp4" type="video/mp4">
+</video>
+<span>CAM-01 | CITY</span>
+</div>
+
+<div class="camera">
+<video autoplay muted loop playsinline>
+<source src="traffic.mp4" type="video/mp4">
+</video>
+<span>CAM-02 | TRAFFIC</span>
+</div>
+
+<div class="camera">
+<video autoplay muted loop playsinline>
+<source src="metro.mp4" type="video/mp4">
+</video>
+<span>CAM-03 | METRO</span>
+</div>
+
+<div class="camera">
+<video autoplay muted loop playsinline>
+<source src="highway.mp4" type="video/mp4">
+</video>
+<span>CAM-04 | HIGHWAY</span>
+</div>
+
+<div class="camera">
+<video autoplay muted loop playsinline>
+<source src="airport.mp4" type="video/mp4">
+</video>
+<span>CAM-05 | AIRPORT</span>
+</div>
+
+<div class="camera">
+<video autoplay muted loop playsinline>
+<source src="drone.mp4" type="video/mp4">
+</video>
+<span>CAM-06 | DRONE</span>
+</div>
+
+</section>
+
+<section class="logs">
+<h2>⚠ LIVE SYSTEM LOGS</h2>
+<div id="logContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+
