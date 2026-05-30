@@ -19,6 +19,9 @@ A futuristic hacker-style CCTV monitoring dashboard built using HTML, CSS, and J
 * CSS3
 * JavaScript
 
+## Live Demo
+https://musical-melba-180dc9.netlify.app/
+
 ## Folder Structure
 
 ```text
